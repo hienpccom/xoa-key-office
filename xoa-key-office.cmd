@@ -52,15 +52,15 @@ if exist "%ProgramFiles%\Microsoft Office\Office%xx%\ospp.vbs" cd /d "%ProgramFi
 if exist "%ProgramFiles(x86)%\Microsoft Office\Office%xx%\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office%xx%"
 cscript ospp.vbs /dstatus >dstatus.txt
 start dstatus.txt
-goto 21ak22com
+goto hienpc
 )
 
-:21ak22com
+:hienpc
 set /p key= * NHAP 5 KY TU CUOI CUA KEY : 
 @echo  ...DANG XOA KEY OFFICE...
 cscript OSPP.VBS /unpkey:%key%
 @echo =========================================
 @echo      DA XOA KEY OFFICE THANH CONG !
 @echo =========================================
-goto 21ak22com
+goto hienpc
 )
